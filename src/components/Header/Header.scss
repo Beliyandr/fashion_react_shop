@@ -7,4 +7,50 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+
+    & span {
+
+      font-style: 40px;
+      font-weight: 900;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      color: var(--textColor);
+      text-transform: uppercase;
+    }
+  }
+
+  &__nav {
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+
+
+    ul {
+      display: flex;
+      column-gap: 65px;
+      align-items: center;
+    }
+
+    &-link {
+      color: var(--textColor);
+    }
+  }
+
+  &__nav-btn {
+    background-color: var(--textColor);
+    border-radius: 7px;
+    padding: 13px 22px 17px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    color: white;
+  }
 }
