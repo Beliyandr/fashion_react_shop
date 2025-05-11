@@ -9,13 +9,17 @@ export const Promo = () => {
       <div className="promo__content">
         <div className="promo__text">
           <div className="promo__title">
-            <span className='promo__title-highlight'>
+            <span className='promo__title-highlight highlight'>
               <span>
                 LET’S
               </span>
             </span>
             EXPLORE
-            UNIQUE
+            <span className='promo__title-highlight highlight highlight--yellow'>
+              <span>
+                UNIQUE
+              </span>
+            </span>
             CLOTHES.
           </div>
           <div className="promo__desc">
@@ -30,5 +34,5 @@ export const Promo = () => {
         </div>
       </div>
     </div>
-    Promo</section>;
+  </section>;
 };

@@ -1,0 +1,26 @@
+.arrivals {
+  padding-block: 120px 143px;
+
+
+
+  &__header {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__header {}
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+
+  &__card {}
+}
+
+
+.title-2 {}

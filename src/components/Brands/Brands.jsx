@@ -1,4 +1,5 @@
 import React from 'react'
+import './Brands.scss'
 import hm from './../../img/brands/HM.png'
 import amazon from './../../img/brands/Amazon.png'
 import lacoste from './../../img/brands/Lacoste.png'

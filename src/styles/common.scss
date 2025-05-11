@@ -37,3 +37,35 @@ body {
     background-image: url('./../img/icons/decor-yellow.svg');
     background-repeat: no-repeat;
 }
+
+.highlight {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    & span {
+        position: relative;
+        z-index: 1;
+
+    }
+
+    &::before {
+        content: '';
+        background-color: white;
+        display: block;
+        position: absolute;
+        top: -5px;
+        bottom: 10px;
+        width: 100%;
+        right: 38px;
+        rotate: -2deg
+    }
+}
+
+.highlight--yellow {
+
+    &::before {
+        background-color: var(--yellow);
+        right: 28px;
+    }
+}
