@@ -1,16 +1,79 @@
 .banner {
-  background-color: var(--yellow);
+  background: linear-gradient(to right, #f9e127, #e4d079);
+  margin-bottom: 190px;
 
-  &__wrapper {}
+  &__wrapper {
+    display: flex;
+    column-gap: 63px;
+    // background: linear-gradient(#f3d75c, #E0C340);
+  }
 
   &__img {}
 
-  &__info {}
+  &__info {
+    padding: 128px 25px 0px 0px
+  }
 
   &__title {
     font-weight: 900;
     font-size: 111px;
-    line-height: 1.2
+    line-height: 1.2;
+    // max-width: 600px;
+    margin-bottom: 33px;
+
   }
 
+  &__text {
+    font-size: 36px;
+    line-height: 1.44;
+    letter-spacing: -0.02em;
+    color: #231300;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.44;
+    letter-spacing: -0.02em;
+    margin-bottom: 51px;
+  }
+
+  &__date {
+    font-weight: 900;
+    letter-spacing: 0.02em;
+  }
+
+  &__btn {
+    padding: 27px 52px;
+
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    color: #fff;
+    background-color: var(--textColor);
+    text-transform: uppercase;
+    border-radius: 8px;
+
+
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 0.8
+  }
 }

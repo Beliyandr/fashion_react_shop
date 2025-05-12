@@ -1,12 +1,14 @@
 import React from 'react'
 import './Banner.scss'
+import bannerImg from './../../img/images/promo-img.jpg'
+
 
 export const Banner = () => {
   return (
     <section className="banner">
       <div className="container">
         <div className="banner__wrapper">
-          <img src="" alt="" className="banner__img" />
+          <img src={bannerImg} alt="promo_img" className="banner__img" />
           <div className="banner__info">
             <div className="banner__title">
               <span className='banner__title-highlight highlight'>
@@ -16,7 +18,7 @@ export const Banner = () => {
               </span>
               SALE NOW
             </div>
-            <div className="bunner__text">
+            <div className="banner__text">
               Spend minimal $100 get 30% off
               voucher code for your next purchase
             </div>
