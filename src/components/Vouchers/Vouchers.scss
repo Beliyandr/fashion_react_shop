@@ -1,0 +1,46 @@
+.vouchers {
+  margin-bottom: 220px;
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 118px;
+
+  }
+
+  &__info {
+    max-width: 510px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    margin-bottom: 41px;
+  }
+
+  &__text {
+    padding-right: 88px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.04em;
+    color: var(--gray);
+    margin-bottom: 65px;
+  }
+
+  &__stores {
+    display: flex;
+    justify-content: space-between;
+
+
+    &-link {}
+  }
+
+  &__store {}
+
+  &__img {}
+}

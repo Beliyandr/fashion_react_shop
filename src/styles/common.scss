@@ -22,20 +22,20 @@ body {
     font-size: 48px;
     line-height: 1.04;
     letter-spacing: 0.06em;
-}
 
-.title-2::after {
-    content: "";
+    &::after {
+        content: "";
 
-    position: absolute;
-    z-index: -1;
-    right: 0px;
-    bottom: 0px;
-    width: 190px;
-    height: 32px;
+        position: absolute;
+        z-index: -1;
+        right: 0px;
+        bottom: 0px;
+        width: 190px;
+        height: 32px;
 
-    background-image: url('./../img/icons/decor-yellow.svg');
-    background-repeat: no-repeat;
+        background-image: url('./../img/icons/decor-yellow.svg');
+        background-repeat: no-repeat;
+    }
 }
 
 .highlight {
@@ -60,12 +60,12 @@ body {
         right: 38px;
         rotate: -2deg
     }
-}
 
-.highlight--yellow {
+    &--yellow {
 
-    &::before {
-        background-color: var(--yellow);
-        right: 28px;
+        &::before {
+            background-color: var(--yellow);
+            right: 28px;
+        }
     }
 }
