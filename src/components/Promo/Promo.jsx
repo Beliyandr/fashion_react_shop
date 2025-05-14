@@ -1,6 +1,7 @@
 import React from "react";
 import './Promo.scss'
 import promoImg from './../../img/images/header-img.jpg'
+import { Link } from 'react-router-dom';
 
 
 export const Promo = () => {
@@ -26,7 +27,7 @@ export const Promo = () => {
             Live for Influential and Innovative fashion!
           </div>
           <div className="promo__btn-wrapper">
-            <a href="#!" className="promo__btn">Shop Now</a>
+            <Link to="/catalogue" className="promo__btn">Shop Now</Link>
           </div>
         </div>
         <div className="promo__img">

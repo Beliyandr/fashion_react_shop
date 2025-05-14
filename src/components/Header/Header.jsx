@@ -1,42 +1,44 @@
 import logoImg from './../../img/icons/logo.svg'
 import React from 'react';
 import './Header.scss';
+import { Link, NavLink } from 'react-router-dom';
+import classNames from 'classnames';
 
 export const Header = () => {
   return (
     <header className='header'>
       <div className="container">
         <div className="header__row">
-          <div className="header__logo">
+          <Link to='/' className="header__logo">
             <img src={logoImg} alt="Logo" />
             <span>Fashion</span>
-          </div>
+          </Link>
           <nav className="header__nav">
             <ul>
               <li>
-                <a href="#!" className='header__nav-link'>
+                <NavLink to="catalogue" className={({ isActive }) => classNames('header__nav-link', { 'is-active': isActive })}>
                   CATALOGUE
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#!" className='header__nav-link'>
+                <NavLink to="fashion" className={({ isActive }) => classNames('header__nav-link', { 'is-active': isActive })}>
                   FASHION
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#!" className='header__nav-link'>
+                <NavLink to="favorite" className={({ isActive }) => classNames('header__nav-link', { 'is-active': isActive })}>
                   FAVOURITE
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#!" className='header__nav-link'>
+                <NavLink to="lifestyle" className={({ isActive }) => classNames('header__nav-link', { 'is-active': isActive })}>
                   LIFESTYLE
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#!" className='header__nav-btn' >
+                <Link to="/login" className='header__nav-btn' >
                   SIGN UP
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

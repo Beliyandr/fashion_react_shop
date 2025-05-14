@@ -1,5 +1,5 @@
 .header {
-  padding-block: 46px 56px;
+  padding-block: 46px;
 
   &__row {
     display: flex;
@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     column-gap: 13px;
+    transition: all 0.4s;
 
     & span {
 
@@ -21,6 +22,10 @@
       letter-spacing: 0.03em;
       color: var(--textColor);
       text-transform: uppercase;
+    }
+
+    &:hover {
+      scale: 1.1;
     }
   }
 
@@ -39,18 +44,60 @@
     }
 
     &-link {
+      transition: all 0.4s;
       color: var(--textColor);
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: var(--yellow);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transition: all 0.4s;
+      }
+
+      &.is-active {
+        color: var(--yellow);
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+
+
+
+      &:hover {
+        opacity: 0.8;
+        color: var(--gray);
+
+        &::after {
+          width: 100%;
+        }
+      }
     }
   }
 
   &__nav-btn {
+    display: flex;
     background-color: var(--textColor);
     border-radius: 7px;
-    padding: 13px 22px 17px;
+    padding: 13px 22px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.5;
     letter-spacing: -0.03em;
     color: white;
+    transition: all 0.4s;
+
+    &:hover {
+      opacity: 0.9;
+      scale: 1.05;
+      color: var(--yellow)
+    }
   }
 }

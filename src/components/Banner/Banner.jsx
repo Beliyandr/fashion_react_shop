@@ -23,7 +23,7 @@ export const Banner = () => {
               voucher code for your next purchase
             </div>
             <div className="banner__desc">
-              <date className="banner__date">1 June - 10 June 2021</date>
+              <div className="banner__date">1 June - 10 June 2021</div>
               *Terms & Conditions apply
             </div>
             <button className="banner__btn">Shop Now</button>

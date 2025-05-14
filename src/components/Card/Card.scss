@@ -8,11 +8,13 @@
     left: 0;
     bottom: 0;
     right: 0;
+
   }
 
   &__image {
     margin-bottom: 28px;
     border-radius: 20px;
+    transition: opacity 0.4s;
   }
 
   &__body {
@@ -47,6 +49,7 @@
 
     & .card__image {
       animation: opacity 0.4s ease-in-out;
+      opacity: 0.8;
     }
 
     & .card__icon {

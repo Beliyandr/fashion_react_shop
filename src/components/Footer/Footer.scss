@@ -56,6 +56,12 @@
 
   &__link {
     color: #8E8E8E;
+    transition: all 0.4s;
+
+    &:hover {
+      opacity: 0.8;
+      color: var(--yellow);
+    }
   }
 }
 
@@ -63,5 +69,13 @@
 
   &__img {}
 
-  &__link {}
+  &__link {
+    transition: all 0.4s;
+
+
+    &:hover {
+      opacity: 0.7;
+      scale: 1.1;
+    }
+  }
 }
